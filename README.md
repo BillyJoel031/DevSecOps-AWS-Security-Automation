@@ -26,11 +26,11 @@ Benefits:
 # Steps
 - Create a repository on AWS CodeCommit
 
- <a href="https://imgur.com/khwwKHm"><img src="https://i.imgur.com/khwwKHm.png" title="source: imgur.com" /></a>
+  <a href="https://imgur.com/khwwKHm"><img src="https://i.imgur.com/khwwKHm.png" title="source: imgur.com" /></a>
  
 - IAM > Users > Select user > Security credentials > HTTPS Git credentials for AWS CodeCommit > Generate credentials > Save credential
 
- <a href="https://imgur.com/smditP1"><img src="https://i.imgur.com/smditP1.png" title="source: imgur.com" /></a>
+  <a href="https://imgur.com/smditP1"><img src="https://i.imgur.com/smditP1.png" title="source: imgur.com" /></a>
 
 - Clone repository Copy URL > Git > git clone https://git-codecommit_us-east-1..........
 
@@ -83,20 +83,20 @@ Benefits:
   <a href="https://imgur.com/BJiD0x7"><img src="https://i.imgur.com/BJiD0x7.png" title="source: imgur.com" /></a>
    
  - Add a stage between Source and Build stage and connect with the Snyk Software Composition Analysis tool
- <a href="https://imgur.com/Hb4bk8p"><img src="https://i.imgur.com/Hb4bk8p.png" title="source: imgur.com" /></a>
+  <a href="https://imgur.com/Hb4bk8p"><img src="https://i.imgur.com/Hb4bk8p.png" title="source: imgur.com" /></a>
  
  - Snyk SCA scan result
 
-  <a href="https://imgur.com/vGACmuW"><img src="https://i.imgur.com/vGACmuW.png" title="source: imgur.com" /></a>
+   <a href="https://imgur.com/vGACmuW"><img src="https://i.imgur.com/vGACmuW.png" title="source: imgur.com" /></a>
 
   - Create an Artifacts storage
 
-  <a href="https://imgur.com/uRh3sUl"><img src="https://i.imgur.com//uRh3sUl.png" title="source: imgur.com" /></a>
+   <a href="https://imgur.com/uRh3sUl"><img src="https://i.imgur.com//uRh3sUl.png" title="source: imgur.com" /></a>
   # Deploying DAST with OWASP zap (Zed Attack Proxy)
   
   - Rename old buildspec.yml file and add a new buildspec file with the following code
 
-  <a href="https://imgur.com/s8fsn1U"><img src="https://i.imgur.com/s8fsn1U.png" title="source: imgur.com" /></a>
+   <a href="https://imgur.com/s8fsn1U"><img src="https://i.imgur.com/s8fsn1U.png" title="source: imgur.com" /></a>
 
   - Git > git add .
 
@@ -109,7 +109,7 @@ Benefits:
      - Build stage 
    - OWASP ZAP scan report
      
-     <a href="https://imgur.com/XEHUu9z"><img src="https://i.imgur.com//XEHUu9z.png" title="source: imgur.com" /></a>
+      <a href="https://imgur.com/XEHUu9z"><img src="https://i.imgur.com//XEHUu9z.png" title="source: imgur.com" /></a>
 
      <a href="https://imgur.com/HLTJ68z"><img src="https://i.imgur.com/HLTJ68z.png" title="source: imgur.com" /></a>
 # Conclusion:
