@@ -26,11 +26,11 @@ Benefits:
 # Steps
 - Create a repository on AWS CodeCommit
 
- <a href="https://imgur.com/a/MhdBZQK"><img src="https://i.imgur.com/a/MhdBZQK.png" title="source: imgur.com" /></a>
+ <a href="https://imgur.com/khwwKHm"><img src="https://i.imgur.com/khwwKHm.png" title="source: imgur.com" /></a>
  
 - IAM > Users > Select user > Security credentials > HTTPS Git credentials for AWS CodeCommit > Generate credentials > Save credential
 
- <a href="https://imgur.com/a/ZHx4SYz"><img src="https://i.imgur.com/a/ZHx4SYz.png" title="source: imgur.com" /></a>
+ <a href="https://imgur.com/smditP1"><img src="https://i.imgur.com/smditP1.png" title="source: imgur.com" /></a>
 
 - Clone repository Copy URL > Git > git clone https://git-codecommit_us-east-1..........
 
