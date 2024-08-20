@@ -71,9 +71,9 @@ Benefits:
   <a href="https://imgur.com/mEg6Yj9"><img src="https://i.imgur.com/mEg6Yj9.png" title="source: imgur.com" /></a>
  
 - TruffleHog scan result
-- 
-  <a href="https://imgur.com/jICjIcO"><img src="https://i.imgur.com/jICjIcO.png" title="source: imgur.com" /></a
 
+  <a href="https://imgur.com/jICjIcO"><img src="https://i.imgur.com/jICjIcO.png" title="source: imgur.com" /></a>
+  
 - Update buildspec.yml file as follows 
     - env:
     - secrets-manager:
