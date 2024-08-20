@@ -52,7 +52,7 @@ Benefits:
 - Using Git update buildspec.yml file with, git add * > git commit -m "buildspec file updated" > git push
 - Create a CodeBuild Project instance on AWS > Start build
 
-  <a href="https://imgur.com/a/nAZl0oO"><img src="https://i.imgur.com/a/nAZl0oO.png" title="source: imgur.com" /></a>
+  <a href="https://imgur.com/wC7DefZ"><img src="https://i.imgur.com/wC7DefZ.png" title="source: imgur.com" /></a>
 
 - Observe the build scan result on SonarCloud
 
