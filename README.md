@@ -26,63 +26,68 @@ Benefits:
 # Steps
 - Create a repository on AWS CodeCommit
 
- <a href="https://imgur.com/xnG6YhB"><img src="https://i.imgur.com//xnG6YhB.png" title="source: imgur.com" /></a>
+ <a href="https://imgur.com/a/MhdBZQK"><img src="https://imgur.com/a/MhdBZQK" title="source: imgur.com" /></a>
  
 - IAM > Users > Select user > Security credentials > HTTPS Git credentials for AWS CodeCommit > Generate credentials > Save credential
 
- <a href="https://imgur.com/bVYfLZC"><img src="https://i.imgur.com//bVYfLZC.png" title="source: imgur.com" /></a>
+ <a href="https://imgur.com/a/ZHx4SYz"><img src="https://imgur.com/a/ZHx4SYz" title="source: imgur.com" /></a>
 
 - Clone repository Copy URL > Git > git clone https://git-codecommit_us-east-1..........
 
   <a href="https://imgur.com/FwqfVua"><img src="https://i.imgur.com//FwqfVua.png" title="source: imgur.com" /></a>
  
-- Add code to the folder > Git > git add * > git commit -m "Adding files" 
-
-  <a href="https://imgur.com/Vt4f07J"><img src="https://i.imgur.com//Vt4f07J.png" title="source: imgur.com" /></a>
+- Add code to the folder > Git > git add * > git commit -m "Adding files"
+  <a href="https://imgur.com/4DH99Wb"><img src="https://i.imgur.com/4DH99Wb.png" title="source: imgur.com" /></a>
   
 - Git > git push
   
-  <a href="https://imgur.com/48eqkT3"><img src="https://i.imgur.com//48eqkT3.png" title="source: imgur.com" /></a>
+  <a href="https://imgur.com/sohPmMX"><img src="https://i.imgur.com/sohPmMX.png" title="source: imgur.com" /></a>
 
 - Create a buildspec.yml file
 
-  <a href="https://imgur.com/RCNLRxM"><img src="https://i.imgur.com//RCNLRxM.png" title="source: imgur.com" /></a>
+  <a href="https://imgur.com/CNSwDZx"><img src="https://i.imgur.com/CNSwDZx.png" title="source: imgur.com" /></a>
 
-- Create organization project on SonalCloud for Static Application Security Testing (SAST)
-- Update the buildspec.yml file with the SonalCloud project key, organization and token
+- Create organization project on SonarCloud web browser for Static Application Security Testing (SAST)
+- Update the buildspec.yml file with the SonalCloud project key, organization and token in AWS web browser or CLI from VSCODE
 - Using Git update buildspec.yml file with, git add * > git commit -m "buildspec file updated" > git push
 - Create a CodeBuild Project instance on AWS > Start build
 
-  <a href="https://imgur.com/P70lP4J"><img src="https://i.imgur.com//P70lP4J.png" title="source: imgur.com" /></a>
+  <a href="https://imgur.com/a/nAZl0oO"><img src="https://i.imgur.com/a/nAZl0oO.png" title="source: imgur.com" /></a>
 
 - Observe the build scan result on SonarCloud
 
-  <a href="https://imgur.com/oUTIEC7"><img src="https://i.imgur.com//oUTIEC7.png" title="source: imgur.com" /></a>
+  <a href="https://imgur.com/WMyXsSp"><img src="https://i.imgur.com/WMyXsSp.png" title="source: imgur.com" /></a>
 
-- Add java files for unit test and better scan coverage
+- Add Java files for unit test and better scan coverage
 
-  <a href="https://imgur.com/wlwvYtp"><img src="https://i.imgur.com//wlwvYtp.png" title="source: imgur.com" /></a>
+  <a href="https://imgur.com/Bz5BXjV"><img src="https://i.imgur.com/Bz5BXjV.png" title="source: imgur.com" /></a>
 
-- Config secret key in AWS secret manager > Store a new secret > Select other type of secret (API token) > Add the Key-name / Value-token
+- Config secret key in AWS secret manager > Store a new secret > Select "other type" of secret (API token) > Add the Key-name / Value-token
 
-  <a href="https://imgur.com/DZ9F8H6"><img src="https://i.imgur.com//DZ9F8H6.png" title="source: imgur.com" /></a>
+  <a href="https://imgur.com/VOeOLbg"><img src="https://i.imgur.com/VOeOLbg.png" title="source: imgur.com" /></a>
 
 - Install TruffleHog and run a scan for leaked credential
+
+  <a href="https://imgur.com/mEg6Yj9"><img src="https://i.imgur.com/mEg6Yj9.png" title="source: imgur.com" /></a>
  
-  <a href="https://imgur.com/DZ9F8H6"><img src="https://i.imgur.com//DZ9F8H6.png" title="source: imgur.com" /></a>
-  
-  <a href="https://imgur.com/9AvgZEZ"><img src="https://i.imgur.com//9AvgZEZ.png" title="source: imgur.com" /></a>
+  <a href="https://imgur.com/jICjIcO"><img src="https://i.imgur.com/jICjIcO.png" title="source: imgur.com" /></a
 
 - Update buildspec.yml file as follows 
     - env:
     - secrets-manager:
     - TOKEN: sonarcloud1:tokenForSonar
     - Dsonar.login=$TOKEN
+  <a href="https://imgur.com/5O7fzOj"><img src="https://i.imgur.com/5O7fzOj.png" title="source: imgur.com" /></a>
+  
  - Create a CI/CD Pipeline on AWS
+  <a href="https://imgur.com/BJiD0x7"><img src="https://i.imgur.com/BJiD0x7.png" title="source: imgur.com" /></a>
+   
  - Add a stage between Source and Build stage and connect with the Snyk Software Composition Analysis tool
+ <a href="https://imgur.com/7IJ8kIu"><img src="https://i.imgur.com/7IJ8kIu.png" title="source: imgur.com" /></a>
+ 
  - Snyk SCA scan result
 
-  <a href="https://imgur.com/bB69cqf"><img src="https://i.imgur.com//bB69cqf.png" title="source: imgur.com" /></a>
+  <a href="https://imgur.com/vGACmuW"><img src="https://i.imgur.com/vGACmuW.png" title="source: imgur.com" /></a>
 
   - Create an Artifacts storage
 
@@ -91,15 +96,11 @@ Benefits:
   
   - Rename old buildspec.yml file and add a new buildspec file with the following code
 
-  <a href="https://imgur.com/k22fB0h"><img src="https://i.imgur.com//k22fB0h.png" title="source: imgur.com" /></a>
+  <a href="https://imgur.com/s8fsn1U"><img src="https://i.imgur.com/s8fsn1U.png" title="source: imgur.com" /></a>
 
   - Git > git add .
 
-   <a href="https://imgur.com/nzgJFoj"><img src="https://i.imgur.com//nzgJFoj.png" title="source: imgur.com" /></a>
-
    - Git > git push
-
-   <a href="https://imgur.com/nJ58T4G"><img src="https://i.imgur.com//nJ58T4G.png" title="source: imgur.com" /></a>
 
    - AWS > CodePipeline > Release change for DAST OWASP ZAP (Zed Attack Proxy) scan
    - Succesful build pipeline stages
@@ -108,9 +109,9 @@ Benefits:
      - Build stage 
    - OWASP ZAP scan report
      
-   - <a href="https://imgur.com/XEHUu9z"><img src="https://i.imgur.com//XEHUu9z.png" title="source: imgur.com" /></a>
+     <a href="https://imgur.com/XEHUu9z"><img src="https://i.imgur.com//XEHUu9z.png" title="source: imgur.com" /></a>
 
-   <a href="https://imgur.com/J2FUngc"><img src="https://i.imgur.com//J2FUngc.png" title="source: imgur.com" /></a>
+     <a href="https://imgur.com/HLTJ68z"><img src="https://i.imgur.com/HLTJ68z.png" title="source: imgur.com" /></a>
 # Conclusion:
 
 By implementing this DevSecOps pipeline, organizations can significantly improve the security posture of their applications. Integrating security scans throughout the development lifecycle fosters a "security-first" mentality and ultimately leads to building more robust and secure applications.
