@@ -83,7 +83,7 @@ Benefits:
   <a href="https://imgur.com/BJiD0x7"><img src="https://i.imgur.com/BJiD0x7.png" title="source: imgur.com" /></a>
    
  - Add a stage between Source and Build stage and connect with the Snyk Software Composition Analysis tool
- <a href="https://imgur.com/7IJ8kIu"><img src="https://i.imgur.com/7IJ8kIu.png" title="source: imgur.com" /></a>
+ <a href="https://imgur.com/Hb4bk8p"><img src="https://i.imgur.com/Hb4bk8p.png" title="source: imgur.com" /></a>
  
  - Snyk SCA scan result
 
