@@ -108,11 +108,9 @@ Benefits:
    - Succesful build pipeline stages
      - Source stage
      - SCA(Sofware Composition Analysis) stage
-     - Build stage 
-   - OWASP ZAP scan report
-     
+     - Build stage
       <a href="https://imgur.com/XEHUu9z"><img src="https://i.imgur.com//XEHUu9z.png" title="source: imgur.com" /></a>
-
+   - OWASP ZAP scan report
      <a href="https://imgur.com/HLTJ68z"><img src="https://i.imgur.com/HLTJ68z.png" title="source: imgur.com" /></a>
 # Conclusion:
 
